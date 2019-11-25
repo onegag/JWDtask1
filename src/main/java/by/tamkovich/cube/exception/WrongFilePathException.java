@@ -4,7 +4,7 @@ public class WrongFilePathException extends RuntimeException {
     private String message;
 
     public WrongFilePathException() {
-        message = "Exception occurred while parsing path";
+        message = "Exception occurred while reading path";
     }
 
     public WrongFilePathException(String message) {
@@ -23,9 +23,9 @@ public class WrongFilePathException extends RuntimeException {
     @Override
     public String toString() {
         if (message == null) {
-            return "Exception occurred while parsing path";
+            return "Exception occurred while reading path";
         } else {
-            return "Exception occurred while parsing path, with message: " + message;
+            return "Exception occurred while reading path, with message: " + message;
         }
     }
 

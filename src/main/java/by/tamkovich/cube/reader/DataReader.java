@@ -14,7 +14,7 @@ public class DataReader {
         File file;
         List <String> lines = new ArrayList<>();
 
-        if (path!=null) {
+        if (!(path==null)) {
              file = new File(path);
         }
         else {
@@ -30,7 +30,7 @@ public class DataReader {
                 return lines;
 
         } catch (FileNotFoundException e) {
-                throw new WrongFilePathException();
+            throw new WrongFilePathException();
                 //logger fatal
             }
         }
