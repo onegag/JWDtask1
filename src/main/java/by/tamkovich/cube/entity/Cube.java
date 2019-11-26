@@ -4,7 +4,7 @@ public class Cube {
     private Point center;
     private double side;
 
-    public Cube(Point center, double side) {
+    public Cube(Point center, Double side) {
         this.center = center;
         this.side = side;
     }
