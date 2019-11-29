@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class DataReader {
 
-    public List<String> read(String path){
+    public List<String> read(String path) throws WrongFilePathException {
         File file;
         List <String> lines = new ArrayList<>();
 
@@ -31,7 +31,6 @@ public class DataReader {
 
         } catch (FileNotFoundException e) {
             throw new WrongFilePathException();
-                //logger fatal
             }
         }
 }

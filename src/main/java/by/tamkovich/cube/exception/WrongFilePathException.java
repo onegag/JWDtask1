@@ -1,6 +1,6 @@
 package by.tamkovich.cube.exception;
 
-public class WrongFilePathException extends RuntimeException {
+public class WrongFilePathException extends Exception {
     private String message;
 
     public WrongFilePathException() {

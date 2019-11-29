@@ -1,5 +1,7 @@
 package by.tamkovich.cube.validator;
 
-public interface DataValidator {
-    public boolean isValid(String line);
+import java.util.List;
+
+public interface DataValidator < T extends Number>  {
+    public boolean isValid(List <T> fields);
 }
