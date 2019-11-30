@@ -20,6 +20,7 @@ public class WrongFilePathException extends Exception {
         super(cause);
         this.message = message;
     }
+
     @Override
     public String toString() {
         if (message == null) {

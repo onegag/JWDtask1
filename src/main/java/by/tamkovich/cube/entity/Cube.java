@@ -2,9 +2,10 @@ package by.tamkovich.cube.entity;
 
 public class Cube {
     private Point center;
-    private double side;
+    private Double side;
 
     public Cube(Point center, Double side) {
+
         this.center = center;
         this.side = side;
     }
@@ -17,7 +18,7 @@ public class Cube {
         this.center = center;
     }
 
-    public double getSide() {
+    public Double getSide() {
         return side;
     }
 
