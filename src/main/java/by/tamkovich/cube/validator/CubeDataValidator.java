@@ -1,5 +1,7 @@
 package by.tamkovich.cube.validator;
 
+import by.tamkovich.cube.validator.DataValidator;
+
 import java.util.List;
 
 public class CubeDataValidator implements DataValidator<Double> {
